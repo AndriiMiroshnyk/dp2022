@@ -1,0 +1,28 @@
+<section class="laptops" id="goods">
+    <div class="card-container">
+        <div class="card">
+            <img src="{{LaptopsList[0].img}}" alt="photo">
+            <h4>{{LaptopsList[0].title}}</h4>
+            <button class="card__button" (click)="ClickButton1()">More Details</button>
+            <div class="full-info" *ngIf="!isClicked1">
+                {{LaptopsList[0].description}}
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{LaptopsList[1].img}}" alt="photo">
+            <h4>{{LaptopsList[1].title}}</h4>
+            <button class="card__button" (click)="ClickButton2()">More Details</button>
+            <div class="full-info" *ngIf="!isClicked2">
+                {{LaptopsList[1].description}}
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{LaptopsList[2].img}}" alt="photo">
+            <h4>{{LaptopsList[2].title}}</h4>
+            <button class="card__button" (click)="ClickButton3()">More Details</button>
+            <div class="full-info" *ngIf="!isClicked3">
+                {{LaptopsList[2].description}}
+            </div>
+        </div>
+    </div>
+</section>
