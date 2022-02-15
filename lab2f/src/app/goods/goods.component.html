@@ -1,0 +1,12 @@
+<section class="laptops" id="goods">
+    <div class="card-container">
+        <div class="card" *ngFor="let l of LaptopsList">
+            <img src={{l.img}} alt="photo">
+            <h4>{{l.title}}</h4>
+            <button class="card__button" (click)="ClickButton()">More Details</button>
+            <div class="full-info" *ngIf="!isClicked">
+                {{l.description}}
+            </div>
+        </div>
+    </div>
+</section>

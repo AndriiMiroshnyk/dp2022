@@ -1,0 +1,63 @@
+@import "/src/styles.scss";
+
+.laptops {
+    text-align: center;
+    padding-top: 2rem;
+    background-color: $main-color-2;
+    .card-container {
+        width: 95%;
+        margin: 2rem auto 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        .card {
+            margin: auto;
+            width: 100%;
+            img {
+                width: 250px;
+                height: 250px;
+                margin-bottom: 2rem;
+                border-radius: 50%;
+            }
+            h2,
+            h4,
+            p {
+                color: $text-color;
+            }
+            p {
+                margin-top: 1rem;
+            }
+            .card__button {
+                background-color: $main-color;
+                color: $text-color;
+                padding: 14px 28px;
+                margin: 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 18px;
+            }
+            .full-info {
+                width: 70%;
+                margin: auto;
+                color: $text-color;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .card-container {
+        width: 50%;
+        flex-wrap: wrap;
+        margin: auto;
+        .card {
+            padding-bottom: 1.5rem;
+        }
+        .full-info {
+            padding-bottom: 2rem;
+        }
+    }   
+}

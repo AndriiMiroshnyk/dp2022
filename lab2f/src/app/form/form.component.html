@@ -1,0 +1,17 @@
+<div class="updateform">
+    <h3 class="form-title">Update Laptop</h3>
+    <form [formGroup]="laptopForm" (ngSubmit)="updateLaptops()" class="form">
+        <label for="title" class="form-label">Title</label>
+        <input id="title" type="text" formControlName="title" required class="form-input">
+        <label for="img" class="form-label">URL for image (ex. assets/...)</label>
+        <input id="img" type="text" formControlName="img" class="form-input">
+        <label for="description" class="form-label">Description</label>
+        <input id="description" type="text" formControlName="description" required class="form-input">
+        <p class="form-message">Complete the form to enable submit button</p>
+        <button type="submit" [disabled]="!laptopForm.valid" class="form-button">Submit</button>
+    </form>
+</div>
+<div class="uml-diagram">
+    <p class="diagram-title">UML Diagram</p>
+    <img src="assets/screenshot.png">
+</div>
