@@ -1,0 +1,26 @@
+@import "/src/styles.scss";
+
+.hero {
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        h1 {
+            font-size: 64px;
+            color: $text-color;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 32px;
+            color: $text-color;
+            text-decoration: none;
+        }
+    }
+}

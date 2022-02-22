@@ -9,7 +9,7 @@ public class Laptops implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	
+	private int id;
 	private String title;
 	private String img;
 	private String description;
@@ -18,11 +18,20 @@ public class Laptops implements Serializable{
 		
 	}
 	
-	public Laptops(String title, String img, String description) {
+	public Laptops(int id, String title, String img, String description) {
 		super();
+		this.id = id;
 		this.title = title;
 		this.img = img;
 		this.description = description;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getTitle() {
@@ -51,7 +60,7 @@ public class Laptops implements Serializable{
 
 	@Override
 	public String toString() {
-		return "{\"title\": \""+title+"\", \"img\": \""+img+"\", \"description\": \""+description+"\"}";
+		return "{\"id\": \""+id+"\", \"title\": \""+title+"\", \"img\": \""+img+"\", \"description\": \""+description+"\"}";
 	}
 	
 	
