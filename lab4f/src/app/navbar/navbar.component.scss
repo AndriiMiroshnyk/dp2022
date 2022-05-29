@@ -1,0 +1,66 @@
+@import "/src/styles.scss";
+.header {
+    background-color: $main-color;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    color: $text-color;
+    &__logo {
+        cursor: pointer;
+        margin-right: auto;
+    }
+    &__nav__links {
+        li {
+            display: inline-block;
+            padding: 0 20px;
+            list-style: none;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+    }
+    &__menu__toggle {
+        cursor: pointer;
+        border: none;
+        background: none;
+        display: none;
+        i {
+            color: $text-color;
+        }
+    }
+
+    @media only screen and (max-width: 720px) {
+        nav {
+            display: none;
+        }
+        &__menu__toggle {
+            display: block;
+        }
+    }
+}
+
+.dropdown__menu {
+    background: lighten($main-color, 10%);
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 20px 10%;
+    color: $text-color;
+    .nav__links {
+        margin: auto;
+        li {
+            list-style: none;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            padding: 10px;
+            a {
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+    }
+}

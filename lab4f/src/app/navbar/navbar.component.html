@@ -1,0 +1,16 @@
+<header class="header" id="header">
+    <h2 class="header__logo">Laptops</h2>
+    <nav>
+        <ul class="header__nav__links">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#goods">Our Goods</a></li>
+        </ul>
+    </nav>
+    <button class="header__menu__toggle" (click)="openNav()"><i class='bx bx-menu bx-md'></i></button>
+</header>
+<div class="dropdown__menu" *ngIf="!isCollapsed">
+    <ul class="nav__links">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#goods">Our Goods</a></li>
+    </ul>
+</div>
