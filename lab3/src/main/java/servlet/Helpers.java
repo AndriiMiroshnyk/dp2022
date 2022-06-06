@@ -30,7 +30,7 @@ public class Helpers {
 	public static Laptops laptopParse(HttpServletRequest request) {
 		Laptops laptops = new Laptops();
 		JsonElement jsonElement = bodyParse(request);
-		laptops.setId(jsonElement.getAsJsonObject().get("id").getAsInt());
+		//laptops.setId(jsonElement.getAsJsonObject().get("id").getAsInt());
 		laptops.setTitle(jsonElement.getAsJsonObject().get("title").getAsString());
 		laptops.setImg(jsonElement.getAsJsonObject().get("img").getAsString());
 		laptops.setDescription(jsonElement.getAsJsonObject().get("description").getAsString());
